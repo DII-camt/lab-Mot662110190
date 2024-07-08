@@ -1,0 +1,111 @@
+.round-button {
+
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color : #007BFF;
+    border: none;
+    border-radius: 25px;
+    text-align: center;
+cursor: pointer;
+}
+.round-button:hover {
+    animation-name: button;
+    animation-duration: 2s;
+
+  }
+  @keyframes button{
+    from{
+        background-color:#007BFF; ;
+    }
+    to{
+        background-color: red;
+    }
+}
+    @media only screen and (max-width: 1400px) {
+        .round-button{
+            border-radius: 0px;
+        }
+    }
+  
+.container > p{ 
+    color:red
+    }
+
+.header { grid-area: header; }
+.menu { grid-area: menu; }
+.main { grid-area: main; }
+.left { grid-area: left; }
+.right { grid-area: right; }
+.footer { grid-area: footer; }
+.grid-container {
+display: grid;
+grid-template-areas:
+'header header header header header header'
+'menu main main main main main'
+'menu left left left right right'
+'footer footer footer footer footer footer';
+
+gap: 10px;
+background-color: red;
+padding: 10px;
+}
+
+.grid-container > div {
+background-color: #f0f0f0;
+text-align: center;
+padding: 20px 0;
+font-size: 30px;
+}
+
+
+.table1 {
+    display: grid ;
+    grid-template-columns: repeat(4,300px ) 
+    }
+    .table1-item {
+    background-color: white;
+    border: 1px solid #000000;
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    }
+    .flex1 {
+
+        display: flex;
+        background-color: DodgerBlue;
+        flex-direction: row-reverse;
+        .item{
+            background-color: #f1f1f1;
+            margin: 10px;
+            padding: 20px;
+            font-size: 30px;
+        }
+        }
+        .flex2 {
+
+            display: flex;
+            background-color: rgb(11, 58, 105);
+            flex-wrap:wrap-reverse;
+            .item{
+                background-color: #f1f1f1;
+                margin: 10px;
+                padding: 60px;
+                font-size: 30px;
+            }
+            }
+            .flex-container {
+                display: flex;
+                height: 300px;
+                background-color:DodgerBlue;
+                justify-content: center;
+                align-items: center;
+            
+                }
+            
+                .flex-container > div {
+                    background-color: #f1f1f1;
+                    color: white;
+                    width: 100px;
+                    height: 100px;
